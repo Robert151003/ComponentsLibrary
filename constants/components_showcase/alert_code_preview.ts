@@ -46,25 +46,6 @@ export default function AlertDemo() {
   )
 }`,
 
-action: `import {
-  Alert,
-  AlertDescription,
-  AlertTitle,
-} from "@/components/ui/alert"'
-import { InfoIcon } from 'lucide-react'
-
-export default function AlertDemo() {
-  return (
-    <Alert variant={'destructive'}>
-      <InfoIcon />
-      <AlertTitle>HPayment failed</AlertTitle>
-      <AlertDescription>
-        Your payment could not be processed. Please check your payment method and try again.
-      </AlertDescription>
-    </Alert>
-  )
-}`,
-
 colour: `import {
   Alert,
   AlertDescription,

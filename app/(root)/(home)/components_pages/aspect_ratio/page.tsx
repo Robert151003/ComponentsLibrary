@@ -46,7 +46,6 @@ const page = () => {
                 src="/images/grey.jpg"
                 alt='Image'
                 fill
-                sizes="100vw"
                 className='rounded-md object-cover'
               />
             </AspectRatio>
@@ -73,7 +72,6 @@ const page = () => {
                 src="/images/grey.jpg"
                 alt='Image'
                 fill
-                sizes="100vw"
                 className='rounded-md object-cover'
               />
             </AspectRatio>
@@ -100,7 +98,6 @@ const page = () => {
                 src="/images/grey.jpg"
                 alt='Image'
                 fill
-                sizes="100vw"
                 className='rounded-md object-cover'
               />
             </AspectRatio>

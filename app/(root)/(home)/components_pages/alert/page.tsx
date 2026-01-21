@@ -83,30 +83,6 @@ const page = () => {
 
       <Separator className="my-8" />
 
-      {/* Action Alert Example */}
-      <div>
-        <h2 className="text-2xl font-bold text-foreground py-4">Action Alert</h2>
-        <p className="text-medium text-foreground py-4">Use <CodeInline>AlertAction</CodeInline> to add a button or other action element to the alert.</p>
-        <TabbedPreview 
-          className="p-4 w-full max-w-xl"
-          code={alert_code_previews.action}
-          language="typescript"
-          filename="Alert-demo.tsx"
-          highlightLines={[]}
-        >
-          <div>
-            <Alert>
-              <AlertTitle>Dark mode is now available</AlertTitle>
-              <AlertDescription>
-                Enable it under your profile settings to get started.
-              </AlertDescription>
-            </Alert>
-          </div>
-        </TabbedPreview>
-      </div>
-
-      <Separator className="my-8" />
-
       {/* Custom Colours Alert Example */}
       <div>
         <h2 className="text-2xl font-bold text-foreground py-4">Custom Colours Alert</h2>
