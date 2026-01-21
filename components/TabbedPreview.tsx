@@ -3,7 +3,7 @@
 import React, { ReactNode } from 'react'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { CodeBlock } from '@/components/ui/code-block'
-import { PagePreview } from '@/components/PagePreview'
+
 
 interface TabbedPreviewProps {
   children: ReactNode
@@ -31,7 +31,10 @@ export function TabbedPreview({
   highlightLines = []
 }: TabbedPreviewProps) {
   return (
-    <div className="w-full border border-border rounded-lg overflow-hidden bg-background">
+    <div
+      className="w-full border border-border rounded-lg overflow-hidden bg-background"
+      style={{ scrollbarGutter: 'stable both-edges' }}
+    >
       <Tabs defaultValue="preview" className="w-full">
         <div className="border-b border-border px-4">
           <TabsList className="mb-0 bg-transparent p-0 h-auto rounded-none">
@@ -51,16 +54,10 @@ export function TabbedPreview({
         </div>
         
         <TabsContent value="preview" className="mt-0 p-0 border-none focus-visible:ring-0">
-          <div className="p-6 md:p-8">
-            <PagePreview 
-              className={className}
-              width={width}
-              height={height}
-              mobileWidth={mobileWidth}
-              mobileHeight={mobileHeight}
-            >
-              {children}
-            </PagePreview>
+          <div className="p-6 md:p-8 flex justify-center">
+            <div className="w-full max-w-xl">
+                {children}
+            </div>
           </div>
         </TabsContent>
         

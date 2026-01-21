@@ -39,6 +39,11 @@ export const sidebar_links = [
       url: "/components_pages/accordion",
       icon: Sidebar,
     },
+    {
+      title: "Page Preview",
+      url: "/components_pages/page_preview",
+      icon: Sidebar,
+    },
   ]
 
   export const installation_sidebar_links = [

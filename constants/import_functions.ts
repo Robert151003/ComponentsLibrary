@@ -7,10 +7,6 @@ export const import_functions = [
         title: 'separator_import',
         code_snippet: 'npx shadcn@latest add separator'
     },
-    {
-        title: 'accordion_import',
-        code_snippet: 'npm install @heroui/accordion'
-    },
 ]
 
 export const usage_Code =[
