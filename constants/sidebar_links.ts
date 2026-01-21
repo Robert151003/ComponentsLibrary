@@ -17,37 +17,30 @@ export const sidebar_links = [
     {
       title: "Sidebar",
       url: "/components_pages/sidebar",
-      icon: Sidebar,
     },
     {
       title: "Navbar",
       url: "/components_pages/navbar",
-      icon: Sidebar,
     },
     {
       title: "Code Block",
       url: "/components_pages/code_block",
-      icon: Sidebar,
     },
     {
       title: "Separator",
       url: "/components_pages/separator",
-      icon: Sidebar,
     },
     {
       title: "Accordion",
       url: "/components_pages/accordion",
-      icon: Sidebar,
     },
     {
       title: "Page Preview",
       url: "/components_pages/page_preview",
-      icon: Sidebar,
     },
     {
       title: "Alert",
       url: "/components_pages/alert",
-      icon: Sidebar,
     },
   ]
 
@@ -55,6 +48,5 @@ export const sidebar_links = [
     {
         title: "Setup",
         url: "#",
-        icon: Home,
       },
   ]
