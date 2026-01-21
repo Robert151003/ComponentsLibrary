@@ -10,7 +10,7 @@ export default function SeparatorDemo() {
       <Separator />
       <p className="text-sm text-muted-foreground m-6">This is an example separator</p>
       <Separator className='my-4' />
-      <div className="flex h-5 items-center space-x-4 text-sm items-center">
+      <div className="flex h-5 items-center space-x-4 text-sm">
         <div className='text-muted-foreground'>One</div>
         <Separator orientation="vertical" />
         <div className='text-muted-foreground'>Two</div>
