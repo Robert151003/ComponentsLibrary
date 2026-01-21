@@ -77,7 +77,7 @@ export default function SidebarDemo() {
               border-right: 1px solid hsl(var(--border)) !important;
             }
           `}</style>
-          <div className={`${previewClass} relative w-full max-w-5xl h-[480px] border rounded-lg shadow-lg overflow-hidden bg-background`}
+          <div className={`${previewClass} relative w-full max-w-5xl h-120 border rounded-lg shadow-lg overflow-hidden bg-background`}
                >
             <SidebarProvider>
               <AppSidebar />

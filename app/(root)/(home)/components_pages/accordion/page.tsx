@@ -17,11 +17,11 @@ const page = () => {
   return (
     <div>
       <h1 className="text-3xl font-bold mb-6 text-foreground">Accordion</h1>
-      <p className="text-sm text-muted-foreground mb-6">Accordion display a list of high-level options that can expand/collapse to reveal more information.</p>
+      <p className="text-sm text-muted-foreground">Accordion display a list of high-level options that can expand/collapse to reveal more information.</p>
 
-      <Separator />
+      <Separator className='my-8'/>
 
-      <h2 className="text-2xl font-bold mb-6 text-foreground py-4">Installation</h2>
+      <h2 className="text-2xl font-bold text-foreground py-4">Installation</h2>
       {accordion_code_previews.code_snippet && (
         <CodeBlock
           language="bash"
@@ -30,12 +30,12 @@ const page = () => {
         />
       )}
 
-      <Separator className="mt-8" />
+      <Separator className="my-8" />
       
       {/* Basic Accordion Example */}
       <div>
         <h2 className="text-2xl font-bold text-foreground py-4">Basic Accordion</h2>
-        <p className="text-medium mb-6 text-foreground py-4">A basic accordion that shows one item at a time. The first item is open by default.</p>
+        <p className="text-medium text-foreground py-4">A basic accordion that shows one item at a time. The first item is open by default.</p>
         <TabbedPreview 
           width="100%"
           height="auto"
@@ -93,7 +93,7 @@ const page = () => {
       {/* Multiple Accordion Example */}
       <div>
         <h2 className="text-2xl font-bold text-foreground py-4">Multiple Accordion</h2>
-        <p className="text-medium mb-6 text-foreground py-4">Use <CodeInline>type="multiple"</CodeInline> to allow multiple items to be open at the same time.</p>
+        <p className="text-medium text-foreground py-4">Use <CodeInline>type="multiple"</CodeInline> to allow multiple items to be open at the same time.</p>
         <TabbedPreview 
           width="100%"
           height="auto"
@@ -150,7 +150,7 @@ const page = () => {
       {/* Disabled Accordion Example */}
       <div>
         <h2 className="text-2xl font-bold text-foreground py-4">Disabled Accordion</h2>
-        <p className="text-medium mb-6 text-foreground py-4">Use the <CodeInline>disabled</CodeInline> prop on <CodeInline>AccordionItem</CodeInline> to disable individual items.</p>
+        <p className="text-medium text-foreground py-4">Use the <CodeInline>disabled</CodeInline> prop on <CodeInline>AccordionItem</CodeInline> to disable individual items.</p>
         <TabbedPreview 
           width="100%"
           height="auto"
@@ -208,7 +208,7 @@ const page = () => {
       {/* Border Accordion Example */}
       <div>
         <h2 className="text-2xl font-bold text-foreground py-4">Bordered Accordion</h2>
-        <p className="text-medium mb-6 text-foreground py-4">Add <CodeInline>border</CodeInline> to the <CodeInline>Accordion</CodeInline> and <CodeInline>border-b last:border-b-0</CodeInline> to the <CodeInline>AccordionItem</CodeInline> to add borders to the items.</p>
+        <p className="text-medium text-foreground py-4">Add <CodeInline>border</CodeInline> to the <CodeInline>Accordion</CodeInline> and <CodeInline>border-b last:border-b-0</CodeInline> to the <CodeInline>AccordionItem</CodeInline> to add borders to the items.</p>
         <TabbedPreview 
           width="100%"
           height="auto"
