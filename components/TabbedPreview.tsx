@@ -24,10 +24,6 @@ export function TabbedPreview({
   language = 'tsx',
   filename = 'example.tsx',
   className = '',
-  width = '90%',
-  height = '80vh',
-  mobileWidth,
-  mobileHeight,
   highlightLines = []
 }: TabbedPreviewProps) {
   return (
@@ -55,7 +51,7 @@ export function TabbedPreview({
         
         <TabsContent value="preview" className="mt-0 p-0 border-none focus-visible:ring-0">
           <div className="p-6 md:p-8 flex justify-center">
-            <div className="w-full max-w-xl">
+            <div className={className}>
                 {children}
             </div>
           </div>

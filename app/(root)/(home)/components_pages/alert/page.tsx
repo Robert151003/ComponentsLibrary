@@ -38,9 +38,7 @@ const page = () => {
         <h2 className="text-2xl font-bold text-foreground py-4">Basic Alert</h2>
         <p className="text-medium text-foreground py-4">A basic alert with an icon, title and description.</p>
         <TabbedPreview 
-          width="100%" 
-          height="40vh" 
-          className="p-4"
+          className="p-4 w-full max-w-xl"
           code={alert_code_previews.basic}
           language="typescript"
           filename="Alert-Basic.tsx"
@@ -65,9 +63,7 @@ const page = () => {
         <h2 className="text-2xl font-bold text-foreground py-4">Destructive Alert</h2>
         <p className="text-medium text-foreground py-4">Use <CodeInline>variant="destructive"</CodeInline> to create a destructive alert.</p>
         <TabbedPreview 
-          width="100%" 
-          height="40vh" 
-          className="p-4"
+          className="p-4 w-full max-w-xl"
           code={alert_code_previews.destructive}
           language="typescript"
           filename="Alert-Destructive.tsx"
@@ -92,9 +88,7 @@ const page = () => {
         <h2 className="text-2xl font-bold text-foreground py-4">Action Alert</h2>
         <p className="text-medium text-foreground py-4">Use <CodeInline>AlertAction</CodeInline> to add a button or other action element to the alert.</p>
         <TabbedPreview 
-          width="100%" 
-          height="40vh" 
-          className="p-4"
+          className="p-4 w-full max-w-xl"
           code={alert_code_previews.action}
           language="typescript"
           filename="Alert-demo.tsx"
@@ -118,9 +112,7 @@ const page = () => {
         <h2 className="text-2xl font-bold text-foreground py-4">Custom Colours Alert</h2>
         <p className="text-medium text-foreground py-4">You can customize the alert colors by adding custom classes such as <CodeInline>bg-amber-50 dark:bg-amber-950</CodeInline> to the <CodeInline>Alert</CodeInline> component.</p>
         <TabbedPreview 
-          width="100%" 
-          height="40vh" 
-          className="p-4"
+          className="p-4 w-full max-w-xl"
           code={alert_code_previews.colour}
           language="typescript"
           filename="Alert-Colours.tsx"

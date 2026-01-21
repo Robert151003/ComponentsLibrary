@@ -52,6 +52,7 @@ export default function SidebarDemo() {
         code={previewCode}
         language="typescript"
         filename="sidebar-demo.tsx"
+        className='w-full max-w-xl'
         highlightLines={[6, 7, 8]}
       >
         <>

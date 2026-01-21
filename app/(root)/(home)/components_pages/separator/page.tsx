@@ -31,9 +31,7 @@ const page = () => {
       <h2 className="text-2xl font-bold text-foreground py-4">Preview</h2>
       <p className="text-medium text-foreground py-4">A basic seperator. Can be made vertical by adding <CodeInline>orientation="vertical"</CodeInline> to the seperator.</p>
       <TabbedPreview 
-        width="100%" 
-        height="40vh" 
-        className="p-4"
+        className="p-4 w-full max-w-xl"
         code={seperator_code_previews.basic}
         language="typescript"
         filename="separator-demo.tsx"
@@ -56,16 +54,6 @@ const page = () => {
 
       <Separator className="mt-8" />
 
-      <h2 className="text-2xl font-bold text-foreground py-4">Usage</h2>
-      {seperator_code_previews.import && (
-        <div className='pb-6'>
-          <CodeBlock
-            language="typescript"
-            filename='Seperator Usage'
-            code={seperator_code_previews.import}
-          />
-        </div>
-      )}
     </div>
   )
 }

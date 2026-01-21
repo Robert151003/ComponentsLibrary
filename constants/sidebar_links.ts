@@ -42,6 +42,10 @@ export const sidebar_links = [
       title: "Alert",
       url: "/components_pages/alert",
     },
+    {
+      title: "Aspect Ratio",
+      url: "/components_pages/aspect_ratio",
+    },
   ]
 
   export const installation_sidebar_links = [

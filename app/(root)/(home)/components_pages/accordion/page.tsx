@@ -37,9 +37,7 @@ const page = () => {
         <h2 className="text-2xl font-bold text-foreground py-4">Basic Accordion</h2>
         <p className="text-medium text-foreground py-4">A basic accordion that shows one item at a time. The first item is open by default.</p>
         <TabbedPreview 
-          width="100%"
-          height="auto"
-          className="p-4 max-w-xl"
+          className="p-4 w-full max-w-xl"
           code={accordion_code_previews.basic}
           language="typescript"
           filename="accordion-demo.tsx"
@@ -95,9 +93,7 @@ const page = () => {
         <h2 className="text-2xl font-bold text-foreground py-4">Multiple Accordion</h2>
         <p className="text-medium text-foreground py-4">Use <CodeInline>type="multiple"</CodeInline> to allow multiple items to be open at the same time.</p>
         <TabbedPreview 
-          width="100%"
-          height="auto"
-          className="p-4 max-w-xl"
+          className="p-4 w-full max-w-xl"
           code={accordion_code_previews.multiple}
           language="typescript"
           filename="accordion-demo.tsx"
@@ -152,9 +148,7 @@ const page = () => {
         <h2 className="text-2xl font-bold text-foreground py-4">Disabled Accordion</h2>
         <p className="text-medium text-foreground py-4">Use the <CodeInline>disabled</CodeInline> prop on <CodeInline>AccordionItem</CodeInline> to disable individual items.</p>
         <TabbedPreview 
-          width="100%"
-          height="auto"
-          className="p-4 max-w-xl"
+          className="p-4 w-full max-w-xl"
           code={accordion_code_previews.disabled}
           language="typescript"
           filename="accordion-demo.tsx"
@@ -210,9 +204,7 @@ const page = () => {
         <h2 className="text-2xl font-bold text-foreground py-4">Bordered Accordion</h2>
         <p className="text-medium text-foreground py-4">Add <CodeInline>border</CodeInline> to the <CodeInline>Accordion</CodeInline> and <CodeInline>border-b last:border-b-0</CodeInline> to the <CodeInline>AccordionItem</CodeInline> to add borders to the items.</p>
         <TabbedPreview 
-          width="100%"
-          height="auto"
-          className="p-4 max-w-xl"
+          className="p-4 w-full max-w-xl"
           code={accordion_code_previews.bordered}
           language="typescript"
           filename="accordion-demo.tsx"
