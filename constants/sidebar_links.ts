@@ -44,6 +44,11 @@ export const sidebar_links = [
       url: "/components_pages/page_preview",
       icon: Sidebar,
     },
+    {
+      title: "Alert",
+      url: "/components_pages/alert",
+      icon: Sidebar,
+    },
   ]
 
   export const installation_sidebar_links = [
