@@ -1,0 +1,75 @@
+'use client'
+
+import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar'
+import { Separator } from '@/components/ui/separator'
+import { CodeBlock } from '@/components/ui/code-block'
+import { TabbedPreview } from '@/components/TabbedPreview'
+import { AppSidebar } from '@/components/components_showcase/AppSidebar'
+import { import_functions } from '@/constants/import_functions'
+
+const page = () => {
+  const importData = import_functions.find(item => item.title === 'sidebar_import')
+
+  const previewCode = `import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar'
+import { AppSidebar } from '@/components/AppSidebar'
+
+export default function SidebarDemo() {
+  return (
+    <SidebarProvider>
+      <AppSidebar />
+      <main className='relative bg-background flex-1'>
+        <SidebarTrigger className='absolute top-4 left-4 z-10' />
+        <div className="p-4 pt-16">
+          <h1 className="text-2xl font-bold mb-2">Sidebar Component</h1>
+          <p className="text-muted-foreground">This is the sidebar component displayed in a box.</p>
+        </div>
+      </main>
+    </SidebarProvider>
+  )
+}`
+
+  return (
+    <div>
+      <h1 className="text-3xl font-bold mb-6 text-foreground">Sidebar</h1>
+      <p className="text-sm text-muted-foreground mb-6">A collapsible sidebar component with navigation links and responsive design.</p>
+
+      <Separator />
+
+      <h2 className="text-2xl font-bold mb-6 text-foreground py-4">Installation</h2>
+      {importData && (
+        <CodeBlock
+          language="bash"
+          filename={importData.title}
+          code={importData.code_snippet}
+        />
+      )}
+
+      <Separator className="mt-8" />
+
+      <h2 className="text-2xl font-bold mb-6 text-foreground py-4">Preview</h2>
+      <TabbedPreview
+        code={previewCode}
+        language="typescript"
+        filename="sidebar-demo.tsx"
+        highlightLines={[6, 7, 8]}
+      >
+        <SidebarProvider>
+          <AppSidebar />
+          <main className='relative bg-background flex-1'>
+            <SidebarTrigger className='absolute top-4 left-4 z-10' />
+            <div className="p-4 pt-16">
+              <h1 className="text-2xl font-bold mb-2">Sidebar Component</h1>
+              <p className="text-muted-foreground">This is the sidebar component displayed in a box.</p>
+            </div>
+          </main>
+        </SidebarProvider>
+      </TabbedPreview>
+
+      <Separator className="my-8" />
+
+
+    </div>
+  )
+}
+
+export default page
