@@ -62,6 +62,10 @@ export const sidebar_links = [
       title: "Breadcrumbs",
       url: "/components_pages/breadcrumbs",
     },
+    {
+      title: "Button",
+      url: "/components_pages/button",
+    },
   ]
 
   export const installation_sidebar_links = [
