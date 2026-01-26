@@ -50,6 +50,18 @@ export const sidebar_links = [
       title: "Aspect Ratio",
       url: "/components_pages/aspect_ratio",
     },
+    {
+      title: "Avatar",
+      url: "/components_pages/avatar",
+    },
+    {
+      title: "Badge",
+      url: "/components_pages/badge",
+    },
+    {
+      title: "Breadcrumbs",
+      url: "/components_pages/breadcrumbs",
+    },
   ]
 
   export const installation_sidebar_links = [
