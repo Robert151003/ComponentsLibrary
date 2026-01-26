@@ -43,6 +43,10 @@ export const sidebar_links = [
       url: "/components_pages/alert",
     },
     {
+      title: "Alert Dialog",
+      url: "/components_pages/alert_dialog",
+    },
+    {
       title: "Aspect Ratio",
       url: "/components_pages/aspect_ratio",
     },
