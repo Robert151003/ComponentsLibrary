@@ -66,6 +66,10 @@ export const sidebar_links = [
       title: "Button",
       url: "/components_pages/button",
     },
+    {
+      title: "Button Group",
+      url: "/components_pages/button_group",
+    },
   ]
 
   export const installation_sidebar_links = [
