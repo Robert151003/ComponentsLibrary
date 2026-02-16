@@ -70,6 +70,14 @@ export const sidebar_links = [
       title: "Button Group",
       url: "/components_pages/button_group",
     },
+    {
+      title: "Calendar",
+      url: "/components_pages/calendar",
+    },
+    {
+      title: "Card",
+      url: "/components_pages/card",
+    },
   ]
 
   export const installation_sidebar_links = [
