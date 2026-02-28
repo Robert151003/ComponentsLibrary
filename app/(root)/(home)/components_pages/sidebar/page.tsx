@@ -29,7 +29,7 @@ export default function SidebarDemo() {
   )
 }`
 
-  return (
+  return ( 
     <div>
       <h1 className="text-3xl font-bold mb-6 text-foreground">Sidebar</h1>
       <p className="text-sm text-muted-foreground mb-6">A collapsible sidebar component with navigation links and responsive design.</p>
