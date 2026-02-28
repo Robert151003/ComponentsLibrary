@@ -35,10 +35,6 @@ export const sidebar_links = [
       url: "/components_pages/accordion",
     },
     {
-      title: "Page Preview",
-      url: "/components_pages/page_preview",
-    },
-    {
       title: "Alert",
       url: "/components_pages/alert",
     },
