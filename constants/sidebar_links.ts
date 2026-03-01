@@ -74,6 +74,18 @@ export const sidebar_links = [
       title: "Card",
       url: "/components_pages/card",
     },
+    {
+      title: "Carousel",
+      url: "/components_pages/carousel",
+    },
+    {
+      title: "Chart",
+      url: "/components_pages/chart",
+    },
+    {
+      title: "Checkbox",
+      url: "/components_pages/checkbox",
+    },
   ]
 
   export const installation_sidebar_links = [
